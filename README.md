@@ -28,6 +28,13 @@ Me caracterizo por ser responsable, comprometida y con disposición para aprende
 *Universidad de la Amazonia*  
 (Agosto 2025)
 
+## 🎓 Formación continua
+![Platzi](https://img.shields.io/badge/Platzi-Aprendiendo-98CA3F?style=flat&logo=platzi&logoColor=white)
+
+
+- Cursos enfocados en programación, desarrollo de software y fundamentos tecnológicos.
+
+
 ---
 
 ## 🛠️ Tecnologías en aprendizaje
@@ -75,5 +82,13 @@ Mis repositorios incluyen:
 
 ---
 ## 📫 Contacto
-- 💼 LinkedIn: [Juddy Tatiana Vargas Santofimio](https://www.linkedin.com/in/juddy-tatiana-vargas-santofimio-b9874521a/)
-- 💻 GitHub: [@tatiana1104](https://github.com/tatiana1104)
+<a href="https://www.linkedin.com/in/juddy-tatiana-vargas-santofimio-b9874521a/" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30"/>
+</a>
+<a href="https://github.com/tatiana1104" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30"/>
+</a>
+<a href="https://platzi.com/p/jud.vargas/" target="_blank">
+  <img src="https://cdn.simpleicons.org/platzi/98CA3F" width="30"/>
+</a>
+
