@@ -2,6 +2,20 @@
 
 📍 Colombia  
 💻 Ingeniera de Sistemas | Perfil Junior  
+🌱 Aprendiendo y creciendo en el desarrollo de software  
+
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/juddy-tatiana-vargas-santofimio-b9874521a/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30"/>
+  </a>
+  <a href="https://github.com/tatiana1104" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30"/>
+  </a>
+  <a href="https://platzi.com/p/jud.vargas/" target="_blank">
+    <img src="https://cdn.simpleicons.org/platzi/98CA3F" width="30"/>
+  </a>
+</p>
 
 ## 📊 GitHub
 ![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
@@ -38,7 +52,7 @@ Me caracterizo por ser responsable, comprometida y con disposición para aprende
 ---
 
 ## 🛠️ Tecnologías en aprendizaje
-![Learning](https://img.shields.io/badge/Nivel-En%20aprendizaje-blue)
+![Nivel](https://img.shields.io/badge/Nivel-En%20aprendizaje-blue)
 
 ### Lenguajes de programación
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
@@ -67,10 +81,11 @@ Mis repositorios incluyen:
 ---
 
 ## 🌱 Actualmente aprendiendo
-- Buenas prácticas de programación  
+- Programación orientada a objetos  
+- Buenas prácticas de desarrollo  
 - Control de versiones con Git  
 - Desarrollo de aplicaciones  
-- Resolución de problemas mediante código  
+
 
 ---
 ## 🤝 Habilidades blandas
@@ -79,16 +94,3 @@ Mis repositorios incluyen:
 - Aprendizaje autónomo  
 - Trabajo en equipo  
 - Organización  
-
----
-## 📫 Contacto
-<a href="https://www.linkedin.com/in/juddy-tatiana-vargas-santofimio-b9874521a/" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30"/>
-</a>
-<a href="https://github.com/tatiana1104" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30"/>
-</a>
-<a href="https://platzi.com/p/jud.vargas/" target="_blank">
-  <img src="https://cdn.simpleicons.org/platzi/98CA3F" width="30"/>
-</a>
-
