@@ -1,16 +1,79 @@
-## Hi there 👋
+# Juddy Tatiana Vargas Santofimio
 
-<!--
-**tatiana1104/tatiana1104** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+📍 Colombia  
+💻 Ingeniera de Sistemas | Perfil Junior  
 
-Here are some ideas to get you started:
+## 📊 GitHub
+![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
+![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)
+![Repos](https://img.shields.io/badge/Public%20Repos-Ver%20Perfil-blue)
+![Repositorios](https://img.shields.io/badge/Repositorios-10-blue)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tatiana1104&layout=compact)
+
+---
+
+## 👩‍💻 Perfil profesional
+Ingeniera de Sistemas con bases en programación y tecnologías de la información.  
+Perfil junior, orientado al aprendizaje continuo, con interés en el desarrollo de software y el uso de herramientas tecnológicas para la solución de problemas.
+
+Me caracterizo por ser responsable, comprometida y con disposición para aprender y mejorar constantemente mis habilidades técnicas y profesionales.
+
+---
+---
+
+## 🎓 Formación académica
+**Ingeniería de Sistemas**  
+*Universidad de la Amazonia*  
+(Agosto 2025)
+
+---
+
+## 🛠️ Tecnologías en aprendizaje
+![Learning](https://img.shields.io/badge/Nivel-En%20aprendizaje-blue)
+
+### Lenguajes de programación
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+### Bases de datos
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+
+### Herramientas
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![VS%20Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
+
+
+---
+## 📂 Proyectos
+Mis repositorios incluyen:
+- Ejercicios de programación
+- Prácticas con distintos lenguajes
+- Proyectos académicos
+- Uso de Git y GitHub como control de versiones
+
+📌 *Seguiré agregando proyectos a medida que continúe aprendiendo.*
+
+---
+
+## 🌱 Actualmente aprendiendo
+- Buenas prácticas de programación  
+- Control de versiones con Git  
+- Desarrollo de aplicaciones  
+- Resolución de problemas mediante código  
+
+---
+## 🤝 Habilidades blandas
+- Responsabilidad  
+- Compromiso  
+- Aprendizaje autónomo  
+- Trabajo en equipo  
+- Organización  
+
+---
+## 📫 Contacto
+- 💼 LinkedIn: [Juddy Tatiana Vargas Santofimio](https://www.linkedin.com/in/juddy-tatiana-vargas-santofimio-b9874521a/)
+- 💻 GitHub: [@tatiana1104](https://github.com/tatiana1104)
