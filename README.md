@@ -15,6 +15,9 @@
   <a href="https://platzi.com/p/jud.vargas/" target="_blank">
     <img src="https://cdn.simpleicons.org/platzi/98CA3F" width="30"/>
   </a>
+  <a href="https://platzi.com/p/tati-vargas-santofimio" target="_blank">
+    <img src="https://cdn.simpleicons.org/platzi/98CA3F" width="30"/>
+  </a>
 </p>
 
 ## 📊 GitHub
@@ -34,7 +37,6 @@ Perfil junior, orientado al aprendizaje continuo, con interés en el desarrollo 
 
 Me caracterizo por ser responsable, comprometida y con disposición para aprender y mejorar constantemente mis habilidades técnicas y profesionales.
 
----
 ---
 
 ## 🎓 Formación académica
@@ -125,15 +127,6 @@ Mis repositorios incluyen:
 - Uso de Git y GitHub como control de versiones
 
 📌 *Seguiré agregando proyectos a medida que continúe aprendiendo.*
-
----
-
-## 🌱 Actualmente aprendiendo
-- Programación orientada a objetos  
-- Buenas prácticas de desarrollo  
-- Control de versiones con Git  
-- Desarrollo de aplicaciones  
-
 
 ---
 ## 🤝 Habilidades blandas
