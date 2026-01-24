@@ -93,7 +93,7 @@ jobs:
       - name: Actualizar fecha
         run: |
           DATE=$(date +"%d/%m/%Y")
-          sed -i "s/<!--LAST_UPDATE-->/$DATE/" README.md || true
+          sed -i "s|🕒 Última actualización:.*|🕒 Última actualización: $DATE|" README.md || true
           exit 0
 
       - name: Commit y push
