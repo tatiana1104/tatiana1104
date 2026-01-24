@@ -11,7 +11,7 @@
 ![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)
 
-📦 Repositorios públicos: **<!--REPO_COUNT-->0<!--REPO_COUNT-->**
+📦 Repositorios públicos: **<!--REPO_COUNT--><!--REPO_COUNT-->**
 
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)  
