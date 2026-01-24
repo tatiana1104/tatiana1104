@@ -1,4 +1,4 @@
-# Juddy Tatiana Vargas Santofimio
+ # Juddy Tatiana Vargas Santofimio
 
 📍 Colombia  
 💻 Ingeniera de Sistemas | Perfil Junior  
@@ -11,8 +11,7 @@
 ![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)
 
-📦 Repositorios públicos: 14
-⭐ Estrellas totales: <!--STAR_COUNT-->
+📦 Repositorios públicos: <!--REPO_COUNT-->
 
 
 
