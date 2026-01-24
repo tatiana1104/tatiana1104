@@ -11,7 +11,11 @@
 ![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)
 
-📦 Repositorios públicos: 14
+📦 Repositorios públicos: <!--REPO_COUNT-->
+
+
+<!-- DATOS PARA ACTUALIZAR METRICAS
+📦 Repositorios públicos: <!--REPO_COUNT-->  -->
 
 
 
