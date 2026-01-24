@@ -39,7 +39,7 @@
 
 ---
 
-🕒 Última actualización: <!--LAST_UPDATE-->
+🕒 Última actualización: 
 
 
 ---
