@@ -13,7 +13,7 @@
 ![Repos](https://img.shields.io/badge/Public%20Repos-Ver%20Perfil-blue)
 ![Repositorios](https://img.shields.io/badge/Repositorios-10-blue)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)  
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tatiana1104&layout=compact)
 
 ---
