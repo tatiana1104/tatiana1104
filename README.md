@@ -8,19 +8,25 @@
 
 
 ## 📊 GitHub
-![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
-![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)
+<!--![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
+![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)-->
 
-📦 Repositorios públicos: 14
-⭐ Estrellas totales: 0
+📦 Repositorios públicos: 14  
+⭐ Estrellas totales: 0  
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)  
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tatiana1104&layout=compact)
+
 ## 📌 Últimos repositorios
 - 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
 - 🔹 [shop_mvvm](https://github.com/tatiana1104/shop_mvvm)
 - 🔹 [app_ecommerce](https://github.com/tatiana1104/app_ecommerce)
 
+## 🏆 Repositorios destacados
+<!--TOP_REPOS-->
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tatiana1104&layout=compact)
+
+
 
 ---
 
