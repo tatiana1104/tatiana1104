@@ -15,7 +15,8 @@ jobs:
 
       - name: Obtener número de repos públicos
         run: |
-          COUNT=$(curl -s https://api.github.com/users/tatiana1104 | jq '.public_repos')
+          RESPONSE=$(curl -s https://api.github.com/users/tatiana1104)
+          COUNT=$(echo $RESPONSE | grep -o '"public_repos":[0-9]*' | grep -o '[0-9]*')
           sed -i "s/<!--REPO_COUNT-->.*<!--REPO_COUNT-->/<!--REPO_COUNT-->$COUNT<!--REPO_COUNT-->/" README.md
 
       - name: Commit y push si hay cambios
