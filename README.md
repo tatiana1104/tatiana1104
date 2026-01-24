@@ -6,12 +6,13 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mi%20Perfil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juddy-tatiana-vargas-santofimio-b9874521a/)
 
-
 ## 📊 GitHub
 <!--![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)-->
+🕒 Última actualización: <!--LAST_UPDATE-->
 
 📦 Repositorios públicos: 14
+
 ⭐ Estrellas totales: 0
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)  
