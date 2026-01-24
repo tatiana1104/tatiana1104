@@ -14,7 +14,9 @@
 📦 Repositorios públicos: 14
 ⭐ Estrellas totales: 0
 ## 📌 Últimos repositorios
-<!--LATEST_REPOS-->
+- 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
+- 🔹 [shop_mvvm](https://github.com/tatiana1104/shop_mvvm)
+- 🔹 [app_ecommerce](https://github.com/tatiana1104/app_ecommerce)
 
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)  
