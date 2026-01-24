@@ -12,6 +12,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)
 
 📦 Repositorios públicos: 14
+⭐ Estrellas totales: <!--STAR_COUNT-->
 
 
 
