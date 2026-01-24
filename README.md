@@ -19,35 +19,9 @@
 
 ## 📌 Últimos repositorios
 <!--LATEST_REPOS-->
-- 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
-- 🔹 [shop_mvvm](https://github.com/tatiana1104/shop_mvvm)
-- 🔹 [app_ecommerce](https://github.com/tatiana1104/app_ecommerce)
-- 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
-- 🔹 [shop_mvvm](https://github.com/tatiana1104/shop_mvvm)
-- 🔹 [app_ecommerce](https://github.com/tatiana1104/app_ecommerce)
-- 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
-- 🔹 [shop_mvvm](https://github.com/tatiana1104/shop_mvvm)
-- 🔹 [app_ecommerce](https://github.com/tatiana1104/app_ecommerce)
-- 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
-- 🔹 [shop_mvvm](https://github.com/tatiana1104/shop_mvvm)
-- 🔹 [app_ecommerce](https://github.com/tatiana1104/app_ecommerce)
-
----
 
 ## 🏆 Repositorios destacados
 <!--TOP_REPOS-->
-- ⭐ [tatiana1104](https://github.com/tatiana1104/tatiana1104) (0 ⭐)
-- ⭐ [Tarea2_U5](https://github.com/tatiana1104/Tarea2_U5) (0 ⭐)
-- ⭐ [shop_mvvm](https://github.com/tatiana1104/shop_mvvm) (0 ⭐)
-- ⭐ [tatiana1104](https://github.com/tatiana1104/tatiana1104) (0 ⭐)
-- ⭐ [Tarea2_U5](https://github.com/tatiana1104/Tarea2_U5) (0 ⭐)
-- ⭐ [shop_mvvm](https://github.com/tatiana1104/shop_mvvm) (0 ⭐)
-- ⭐ [tatiana1104](https://github.com/tatiana1104/tatiana1104) (0 ⭐)
-- ⭐ [Tarea2_U5](https://github.com/tatiana1104/Tarea2_U5) (0 ⭐)
-- ⭐ [shop_mvvm](https://github.com/tatiana1104/shop_mvvm) (0 ⭐)
-- ⭐ [tatiana1104](https://github.com/tatiana1104/tatiana1104) (0 ⭐)
-- ⭐ [Tarea2_U5](https://github.com/tatiana1104/Tarea2_U5) (0 ⭐)
-- ⭐ [shop_mvvm](https://github.com/tatiana1104/shop_mvvm) (0 ⭐)
 
 ---
 
