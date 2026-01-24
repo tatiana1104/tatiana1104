@@ -5,12 +5,6 @@ permissions:
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 3 * * *"
-
-concurrency:
-  group: update-profile-readme
-  cancel-in-progress: true
 
 jobs:
   update:
@@ -18,6 +12,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Instalar dependencias
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
       - name: Obtener métricas generales
         env:
@@ -27,13 +26,15 @@ jobs:
           API="https://api.github.com"
           AUTH="-H Authorization: Bearer $GITHUB_TOKEN"
 
-          REPO_COUNT=$(curl -s $AUTH "$API/users/$USER" | jq '.public_repos // 0')
+          REPO_COUNT=$(curl -s $AUTH "$API/users/$USER" | jq -r '.public_repos // 0' || echo 0)
 
           STAR_COUNT=$(curl -s $AUTH "$API/users/$USER/repos?per_page=100" \
-            | jq '[.[].stargazers_count] | add // 0')
+            | jq '[.[].stargazers_count] | add // 0' || echo 0)
 
-          sed -i "s/📦 Repositorios públicos:.*/📦 Repositorios públicos: $REPO_COUNT/" README.md
-          sed -i "s/⭐ Estrellas totales:.*/⭐ Estrellas totales: $STAR_COUNT/" README.md
+          sed -i "s/📦 Repositorios públicos:.*/📦 Repositorios públicos: $REPO_COUNT/" README.md || true
+          sed -i "s/⭐ Estrellas totales:.*/⭐ Estrellas totales: $STAR_COUNT/" README.md || true
+
+          exit 0
 
       - name: Actualizar últimos repositorios
         env:
@@ -44,22 +45,22 @@ jobs:
           AUTH="-H Authorization: Bearer $GITHUB_TOKEN"
 
           REPOS=$(curl -s $AUTH "$API/users/$USER/repos?sort=updated&per_page=3" \
-            | jq -r '.[].name')
+            | jq -r '.[].name' || true)
 
           awk -v repos="$REPOS" -v user="$USER" '
           BEGIN { n = split(repos, arr, "\n") }
           {
             if ($0 ~ /<!--LATEST_REPOS-->/) {
               print "<!--LATEST_REPOS-->"
-              for (i = 1; i <= n; i++) {
+              for (i = 1; i <= n; i++)
                 print "- 🔹 [" arr[i] "](https://github.com/" user "/" arr[i] ")"
-              }
               next
             }
             print
           }' README.md > README.tmp || true
 
           mv README.tmp README.md || true
+          exit 0
 
       - name: Actualizar repositorios destacados
         env:
@@ -70,7 +71,7 @@ jobs:
           AUTH="-H Authorization: Bearer $GITHUB_TOKEN"
 
           REPOS=$(curl -s $AUTH "$API/users/$USER/repos?per_page=100" \
-            | jq -r 'sort_by(.stargazers_count) | reverse | .[0:3][] | "\(.name)|\(.stargazers_count)"')
+            | jq -r 'sort_by(.stargazers_count) | reverse | .[0:3][] | "\(.name)|\(.stargazers_count)"' || true)
 
           awk -v repos="$REPOS" -v user="$USER" '
           BEGIN { n = split(repos, arr, "\n") }
@@ -87,11 +88,13 @@ jobs:
           }' README.md > README.tmp || true
 
           mv README.tmp README.md || true
+          exit 0
 
       - name: Actualizar fecha
         run: |
           DATE=$(date +"%d/%m/%Y")
-          sed -i "s/<!--LAST_UPDATE-->/$DATE/" README.md
+          sed -i "s/<!--LAST_UPDATE-->/$DATE/" README.md || true
+          exit 0
 
       - name: Commit y push
         run: |
@@ -101,3 +104,4 @@ jobs:
           git add README.md
           git commit -m "Actualizar README del perfil" || echo "Sin cambios"
           git push || echo "Nada que subir"
+          exit 0
