@@ -11,39 +11,48 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
 
       - name: Obtener métricas de GitHub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Repos públicos
-          REPO_COUNT=$(curl -s https://api.github.com/users/tatiana1104 | grep '"public_repos"' | sed 's/[^0-9]*//g')
+          set -euo pipefail
 
-          # Estrellas totales
-          STAR_COUNT=$(curl -s "https://api.github.com/users/tatiana1104/repos?per_page=100" \
-            | grep '"stargazers_count"' \
-            | sed 's/[^0-9]*//g' \
-            | awk '{s+=$1} END {print s}')
+          API="https://api.github.com"
+          AUTH="-H Authorization: Bearer $GITHUB_TOKEN"
+
+          REPO_COUNT=$(curl -s $AUTH "$API/users/tatiana1104" | jq '.public_repos')
+
+          STAR_COUNT=$(curl -s $AUTH "$API/users/tatiana1104/repos?per_page=100" \
+            | jq '[.[].stargazers_count] | add')
 
           echo "Repos: $REPO_COUNT"
           echo "Stars: $STAR_COUNT"
 
           sed -i "s/📦 Repositorios públicos:.*/📦 Repositorios públicos: $REPO_COUNT/" README.md
           sed -i "s/⭐ Estrellas totales:.*/⭐ Estrellas totales: $STAR_COUNT/" README.md
-      
+
       - name: Actualizar últimos repositorios
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          REPOS=$(curl -s "https://api.github.com/users/tatiana1104/repos?sort=updated&per_page=3" \
-            | grep '"name"' \
-            | head -3 \
-            | cut -d '"' -f4)
+          set -euo pipefail
+
+          API="https://api.github.com"
+          AUTH="-H Authorization: Bearer $GITHUB_TOKEN"
+
+          REPOS=$(curl -s $AUTH "$API/users/tatiana1104/repos?sort=updated&per_page=3" \
+            | jq -r '.[].name')
 
           awk -v repos="$REPOS" '
           BEGIN {
-            split(repos, arr, "\n")
+            n = split(repos, arr, "\n")
           }
           {
             if ($0 ~ /<!--LATEST_REPOS-->/) {
-              for (i in arr) {
+              for (i = 1; i <= n; i++) {
                 print "- 🔹 [" arr[i] "](https://github.com/tatiana1104/" arr[i] ")"
               }
               next
@@ -55,23 +64,27 @@ jobs:
           mv README.tmp README.md
 
       - name: Actualizar repositorios destacados
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          REPOS=$(curl -s "https://api.github.com/users/tatiana1104/repos?per_page=100" \
-            | grep -E '"name"|"stargazers_count"' \
-            | paste - - \
-            | sort -t ':' -k4 -nr \
-            | head -3)
+          set -euo pipefail
+
+          API="https://api.github.com"
+          AUTH="-H Authorization: Bearer $GITHUB_TOKEN"
+
+          REPOS=$(curl -s $AUTH "$API/users/tatiana1104/repos?per_page=100" \
+            | jq -r 'sort_by(.stargazers_count) | reverse | .[0:3][] | "\(.name)|\(.stargazers_count)"')
 
           awk -v repos="$REPOS" '
           BEGIN {
-            n=split(repos, arr, "\n")
+            n = split(repos, arr, "\n")
           }
           {
             if ($0 ~ /<!--TOP_REPOS-->/) {
-              for (i=1; i<=n; i++) {
-                split(arr[i], parts, "\"")
-                name=parts[4]
-                stars=parts[8]
+              for (i = 1; i <= n; i++) {
+                split(arr[i], parts, "|")
+                name = parts[1]
+                stars = parts[2]
                 print "- ⭐ [" name "](https://github.com/tatiana1104/" name ") (" stars " ⭐)"
               }
               next
@@ -84,13 +97,17 @@ jobs:
 
       - name: Actualizar fecha de última actualización
         run: |
+          set -euo pipefail
           DATE=$(date +"%d/%m/%Y")
           sed -i "s/🕒 Última actualización:.*/🕒 Última actualización: $DATE/" README.md
 
-      - name: Commit cambios
+      - name: Commit y push de cambios
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
           git add README.md
-          git commit -m "Actualizar número de repositorios" || exit 0
+          git commit -m "Actualizar README automáticamente" || exit 0
           git push
