@@ -1,12 +1,10 @@
-name: Actualizar número de repositorios
+name: Actualizar repositorios
 
 permissions:
   contents: write
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
 
 jobs:
   update:
@@ -15,35 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Obtener métricas de GitHub
-      run: |
-        USER_DATA=$(curl -s https://api.github.com/users/tatiana1104)
-        REPO_COUNT=$(echo "$USER_DATA" | grep '"public_repos"' | cut -d ':' -f2 | tr -d ', ')
-    
-        STAR_COUNT=$(curl -s https://api.github.com/users/tatiana1104/repos?per_page=100 \
-          | grep '"stargazers_count"' \
-          | cut -d ':' -f2 \
-          | tr -d ', ' \
-          | awk '{s+=$1} END {print s}')
+      - name: Obtener número de repos públicos
+        run: |
+          COUNT=$(curl -s https://api.github.com/users/tatiana1104 | grep '"public_repos"' | sed 's/[^0-9]*//g')
+          echo "Repos: $COUNT"
 
-        awk -v repos="$REPO_COUNT" -v stars="$STAR_COUNT" '
-        /Repositorios públicos:/ {
-          print "📦 Repositorios públicos: " repos
-          next
-        }
-        /<!--STAR_COUNT-->/ {
-          print "⭐ Estrellas totales: " stars
-          next
-        }
-        { print }
-        ' README.md > README.tmp
+          sed -i "s/📦 Repositorios públicos:.*/📦 Repositorios públicos: $COUNT/" README.md
 
-        mv README.tmp README.md
-
-        - name: Commit y push
+      - name: Commit cambios
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add README.md
-          git commit -m "🔄 Actualizar número de repositorios" || exit 0
+          git commit -m "Actualizar número de repositorios" || exit 0
           git push
