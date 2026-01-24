@@ -13,13 +13,8 @@
 
 📦 Repositorios públicos: 14
 ⭐ Estrellas totales: 0
-
-
-
-<!-- 
-DATOS PARA ACTUALIZAR METRICAS SIN PARENTESIS -->
-[//]: # (📦 Repositorios públicos: 14
-[//]: # (sdcs)
+## 📌 Últimos repositorios
+<!--LATEST_REPOS-->
 
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tatiana1104&show_icons=true)  
