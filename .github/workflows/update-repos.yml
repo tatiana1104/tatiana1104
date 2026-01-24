@@ -13,12 +13,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Obtener número de repos públicos
+      - name: Obtener métricas de GitHub
         run: |
-          COUNT=$(curl -s https://api.github.com/users/tatiana1104 | grep '"public_repos"' | sed 's/[^0-9]*//g')
-          echo "Repos: $COUNT"
+          # Repos públicos
+          REPO_COUNT=$(curl -s https://api.github.com/users/tatiana1104 | grep '"public_repos"' | sed 's/[^0-9]*//g')
 
-          sed -i "s/📦 Repositorios públicos:.*/📦 Repositorios públicos: $COUNT/" README.md
+          # Estrellas totales
+          STAR_COUNT=$(curl -s "https://api.github.com/users/tatiana1104/repos?per_page=100" \
+            | grep '"stargazers_count"' \
+            | sed 's/[^0-9]*//g' \
+            | awk '{s+=$1} END {print s}')
+
+          echo "Repos: $REPO_COUNT"
+          echo "Stars: $STAR_COUNT"
+
+          sed -i "s/📦 Repositorios públicos:.*/📦 Repositorios públicos: $REPO_COUNT/" README.md
+          sed -i "s/⭐ Estrellas totales:.*/⭐ Estrellas totales: $STAR_COUNT/" README.md
 
       - name: Commit cambios
         run: |
