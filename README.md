@@ -9,7 +9,6 @@
 ## 📊 GitHub
 <!--![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)-->
-🕒 Última actualización: <!--LAST_UPDATE-->
 
 📦 Repositorios públicos: 14
 
@@ -28,6 +27,8 @@
 - ⭐ [shop_mvvm](https://github.com/tatiana1104/shop_mvvm) ( ⭐)
 - ⭐ [recetario](https://github.com/tatiana1104/recetario) ( ⭐)
 
+
+🕒 Última actualización: <!--LAST_UPDATE-->
 
 
 
