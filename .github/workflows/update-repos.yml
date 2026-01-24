@@ -53,6 +53,35 @@ jobs:
 
           mv README.tmp README.md
 
+      - name: Actualizar repositorios destacados
+        run: |
+          REPOS=$(curl -s "https://api.github.com/users/tatiana1104/repos?per_page=100" \
+            | grep -E '"name"|"stargazers_count"' \
+            | paste - - \
+            | sort -t ':' -k4 -nr \
+            | head -3)
+
+          awk -v repos="$REPOS" '
+          BEGIN {
+            n=split(repos, arr, "\n")
+          }
+          {
+            if ($0 ~ /<!--TOP_REPOS-->/) {
+              for (i=1; i<=n; i++) {
+                split(arr[i], parts, "\"")
+                name=parts[4]
+                stars=parts[8]
+                print "- ⭐ [" name "](https://github.com/tatiana1104/" name ") (" stars " ⭐)"
+              }
+              next
+            }
+            print
+          }
+          ' README.md > README.tmp
+
+          mv README.tmp README.md
+
+      
       - name: Commit cambios
         run: |
           git config user.name "github-actions"
