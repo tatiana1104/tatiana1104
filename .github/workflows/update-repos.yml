@@ -29,6 +29,29 @@ jobs:
 
           sed -i "s/📦 Repositorios públicos:.*/📦 Repositorios públicos: $REPO_COUNT/" README.md
           sed -i "s/⭐ Estrellas totales:.*/⭐ Estrellas totales: $STAR_COUNT/" README.md
+      - name: Actualizar últimos repositorios
+        run: |
+          REPOS=$(curl -s "https://api.github.com/users/tatiana1104/repos?sort=updated&per_page=3" \
+            | grep '"name"' \
+            | head -3 \
+            | cut -d '"' -f4)
+
+          awk -v repos="$REPOS" '
+          BEGIN {
+            split(repos, arr, "\n")
+          }
+          {
+            if ($0 ~ /<!--LATEST_REPOS-->/) {
+              for (i in arr) {
+                print "- 🔹 [" arr[i] "](https://github.com/tatiana1104/" arr[i] ")"
+              }
+              next
+            }
+            print
+          }
+          ' README.md > README.tmp
+
+          mv README.tmp README.md
 
       - name: Commit cambios
         run: |
