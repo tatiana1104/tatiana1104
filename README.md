@@ -11,14 +11,14 @@
 ![GitHub followers](https://img.shields.io/github/followers/tatiana1104?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/tatiana1104?style=social)
 
-📦 Repositorios públicos: 14  
-⭐ Estrellas totales: <!--STAR_COUNT-->
+📦 Repositorios públicos: 14
+⭐ Estrellas totales: 0
 
 
 
 <!-- 
 DATOS PARA ACTUALIZAR METRICAS SIN PARENTESIS -->
-[//]: # (📦 Repositorios públicos: <!--REPO_COUNT--> ⭐ Estrellas totales: <!--STAR_COUNT-->)
+[//]: # (📦 Repositorios públicos: 14
 [//]: # (sdcs)
 
 
