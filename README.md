@@ -132,13 +132,41 @@ Me caracterizo por ser responsable, comprometida y con disposición para aprende
 -->
 ---
 ## 📂 Proyectos
-Mis repositorios incluyen:
-- Ejercicios de programación
-- Prácticas con distintos lenguajes
-- Proyectos académicos
-- Uso de Git y GitHub como control de versiones
 
-📌 *Seguiré agregando proyectos a medida que continúe aprendiendo.*
+### 💻 Programación Básica / Lógica de Programación
+
+#### **📌 proyec_basic**
+**Fecha de creación:** **27 de mayo de 2025**  
+Proyecto introductorio a la lógica de programación.
+
+**Repositorio:**  
+https://github.com/tatiana1104/proyec_basic
+
+**GitHub Pages:**  
+https://tatiana1104.github.io/proyec_basic/
+
+### 🏢 Aplicaciones Empresariales / Sistemas CRUD
+
+#### **📌 pedidos-grupo-17**
+**Fecha de creación:** **13 de noviembre de 2025**  
+
+Aplicación de gestión de pedidos *(descripción pendiente)*.
+
+**Repositorio:**\
+https://github.com/tatiana1104/pedidos-grupo-17
+
+### 📱 Desarrollo Móvil
+
+#### **📌 Calculadora --- App Flutter**
+**Fecha de creación:** **21 de noviembre de 2025**  
+
+Interfaz moderna de calculadora con tema oscuro, botones estilizados, y
+diseño responsivo.\
+Proyecto construido en Flutter con arquitectura lista para conectar la
+lógica funcional.
+
+**Repositorio:**\
+https://github.com/tatiana1104/calculadora
 
 ---
 ## 🤝 Habilidades blandas
