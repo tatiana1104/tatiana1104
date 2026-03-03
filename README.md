@@ -20,6 +20,9 @@
 ## 📌 Últimos repositorios
 <!--LATEST_REPOS-->
 - 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
+- 🔹 [flutter_practicas](https://github.com/tatiana1104/flutter_practicas)
+- 🔹 [java-practicas](https://github.com/tatiana1104/java-practicas)
+- 🔹 [tatiana1104](https://github.com/tatiana1104/tatiana1104)
 - 🔹 [shop_mvvm](https://github.com/tatiana1104/shop_mvvm)
 - 🔹 [app_ecommerce](https://github.com/tatiana1104/app_ecommerce)
 
@@ -27,10 +30,13 @@
 <!--TOP_REPOS-->
 - ⭐ [tatiana1104](https://github.com/tatiana1104/tatiana1104) (0 ⭐)
 - ⭐ [Tarea2_U5](https://github.com/tatiana1104/Tarea2_U5) (0 ⭐)
+- ⭐ [recetario](https://github.com/tatiana1104/recetario) (0 ⭐)
+- ⭐ [tatiana1104](https://github.com/tatiana1104/tatiana1104) (0 ⭐)
+- ⭐ [Tarea2_U5](https://github.com/tatiana1104/Tarea2_U5) (0 ⭐)
 - ⭐ [shop_mvvm](https://github.com/tatiana1104/shop_mvvm) (0 ⭐)
 
 
-🕒 Última actualización: 24/01/2026
+🕒 Última actualización: 03/03/2026
 
 
 ---
