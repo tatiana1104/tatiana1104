@@ -16,8 +16,8 @@ Ingeniera de Sistemas (COPNIA) en transición hacia el desarrollo web. Vengo del
 
 <p align="left">
   <a href="https://www.linkedin.com/in/juddy-tatiana-vargas-santofimio-b9874521a/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://platzi.com/p/jud.vargas/"><img src="https://img.shields.io/badge/Platzi-98CA3F?style=for-the-badge&logo=platzi&logoColor=white"></a>
-  <a href="https://platzi.com/p/tati-vargas-santofimio/"><img src="https://img.shields.io/badge/Platzi-Profesional%20UniAmazonia-98CA3F?style=for-the-badge&logo=platzi&logoColor=white"></a>
+  <a href="https://platzi.com/p/jud.vargas/"><img src="https://img.shields.io/badge/Platzi-Profesional%20UniAmazonia-98CA3F?style=for-the-badge&logo=platzi&logoColor=white"></a>
+  <a href="https://platzi.com/p/tati-vargas-santofimio/"><img src="https://img.shields.io/badge/Platzi-Personal-98CA3F?style=for-the-badge&logo=platzi&logoColor=white"></a>
 </p>
 
 #### 🔧 Lenguajes
